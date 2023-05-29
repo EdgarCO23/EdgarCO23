@@ -1,0 +1,390 @@
+body{
+    width: 850px;
+    height: 530px;
+    background-color: #faf7f7;
+}
+header{
+    width: 850px;
+    height: 88px;
+} 
+.logo{
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+}
+ main{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 90%;  
+    /* justify-content: space-between; */
+}
+/* Cuadro de ingreso de texo*/
+.text-input{
+    position: absolute;
+    width: 660px;
+    height: 400px;
+    left: 100px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 25px;
+    color: #0A3871;
+    background: #e3e0e0;
+    border: 0;
+    outline: ;
+    flex-wrap: wrap;
+}
+.text-input::placeholder{
+    /* position: absolute; */
+    padding-top: 8px;
+    font-size: 30px;
+    color: #0a3871;
+}
+/*Configuración  del texto de información importante y logo*/
+.info{
+    position: absolute;
+    width: 300px;
+    height: 30px;
+    top: 390px;
+    left: 100px;
+    font-family: 'Inter'j, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    color:#495057;
+    opacity: 0.8;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+#botones{
+    position: absolute;
+    display: flex;
+    top: 420px;
+    left: 100px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+/*boton 1 Encriptar*/
+#btn-encriptar{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: #0a3871;
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Inter',sans-serif;
+    border: none;
+    margin-right: 20px ;
+    cursor: pointer;  
+    flex-grow: 0;
+}
+/*boton 2 Desencriptar*/
+#btn-desencriptar{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: #d8efe8;
+    color: #0a3871;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: "Inter",sans-serif;
+    border: 1px solid #0a3871;
+    cursor: pointer;  
+}
+/* Caja de texto resultado*/
+#cajaR{
+    position: absolute;
+    width: 400px;
+    height: 510px;
+    left: 800px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.88);
+    border-radius: 32px;
+    font-family:"Inter",sans-serif;
+    text-align: center;
+    font-size: 24px;
+}
+#divImgen{
+    position: relative;
+}
+.img{
+    position: relative;
+    padding-top: 50px;
+    width: 250px;
+    height: 250px;
+    border-radius: 32px;
+}
+ 
+/* Texto dentro del cuadro a copiar*/
+.texto1{
+    position: relative;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    color: #343A40;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: auto;
+}
+/* Texto dentro del cuadro a copiar*/
+#divImagen .texto2{
+    width: 336px;
+    height: 48px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: auto;
+}
+#btn-copy{
+    visibility: hidden;
+    position: absolute;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: #d8efe8;
+    color: #0A3871;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    border: 1px solid #0A3871;
+    cursor: pointer;
+    text-align: center;
+    top: 430px;
+    left: 30px;
+ }
+/* .btn3{
+    width: 288px;
+    height: 19px;
+    left: 70px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: center;
+    color: #0A3871;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    background-color: orange;
+} */
+
+/*Responsive*/
+/*Tablet*/
+@media screen and (max-width: 800px) {
+    body{
+        
+        width: 100%;
+    }
+    
+     #logo{
+        width: auto;
+     }
+     .text-input{
+        width: 100%;
+     }   
+     #botones{
+       
+        width: 100%;
+        
+    }
+    }
+
+/*Phone Cell*/
+
+@media screen and (max-width: 400px) {
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+    
+        position: relative;
+        width: 375px;
+        height: 933px;
+    }
+  
+
+    .text-input{
+        width: 343px;
+        height: 48px;
+
+        position: absolute;
+        
+        left: 16px;
+        top: 152px;
+
+    }   
+    .label-info{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 8px;
+
+        position: absolute;
+        width: 229px;
+        height: 18px;
+        left: 16px;
+        top: 451px;
+    }
+    #cajaR{
+        display: flex;
+        flex-direction:column;    
+        align-items: flex-start;
+        padding: 32px;
+        gap: 32px;
+
+        position: absolute;
+        width: 327px;
+        height: 195px;
+        left: 24px;
+        top: 680px;        
+    }
+
+    #botones{
+        display: flex;
+        gap: 24px;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        left:16px;
+        top: 485px;
+        height: 158px;
+        width: 343px;
+        top:485px;        
+        position: absolute;
+    }
+
+    #divImagen{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 16px;
+
+        width: 263px;
+        height: 122px;
+
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+              
+    }
+
+    #imagen{
+        display: none;
+        width: 50%;
+        height: 50%;
+    }
+
+    #divImagen .texto1{
+        width: 263px;
+        height: 58px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+        text-align: center;
+        flex:none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+
+    #divImagen .texto2{
+        width: 263px;
+        height: 48px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+    #btn-encriptar{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 24px;
+        gap:8px;
+        width: 343px; 
+        height: 67px;
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+    #msg{
+        
+        width: 295px;
+        height: 120px;
+        position: absolute;
+        left: 16px;
+        top:10px;
+
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 150%;
+
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+        flex-wrap: wrap;
+    }
+    #btn-desencriptar{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 24px;
+        gap:8px;
+        width: 343px; 
+        height: 67px;
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+    #btn-copy{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+
+        align-items: flex-start;
+        
+        padding: 24px;
+        gap:8px;
+
+        width: 260px; 
+        height: 50px;
+        top: 135px;
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+        
+    }   
+}
