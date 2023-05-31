@@ -18,12 +18,13 @@ header{
     position: relative;
     display: flex;
     width: 100%;
-    height: 90%;  
+    height: 90%;
     /* justify-content: space-between; */
 }
 /* Cuadro de ingreso de texo*/
 .text-input{
     position: absolute;
+    
     width: 660px;
     height: 400px;
     left: 100px;
@@ -111,6 +112,23 @@ header{
     text-align: center;
     font-size: 24px;
 }
+.text-input-salida{
+    position: absolute;
+    width: 330px;
+    height: 30px;
+    top: 10px;
+    left: 30px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 25px;
+    color: #0A3871;
+    border: 0;
+    outline: ;
+    flex-wrap: wrap;
+}
+
 #divImgen{
     position: relative;
 }
@@ -125,7 +143,7 @@ header{
 /* Texto dentro del cuadro a copiar*/
 .texto1{
     position: relative;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 700;
     font-family: 'Inter', sans-serif;
     text-align: center;

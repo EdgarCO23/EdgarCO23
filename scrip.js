@@ -4,7 +4,7 @@ function resultado(){
     var inputText = document.querySelector("#input-texto").value;  
     if (inputText=== ""){
         document.getElementById("botonCopiar").style.display = "none";
-        document.getElementById("divImagen").style.display ="block";
+       document.getElementById("divImagen").style.display ="block";
     } else{
         document.getElementById("botonCopiar").style.display = "block";
         document.getElementById("divImagen").style.display = "none";
@@ -23,16 +23,15 @@ function encriptar (){
         alert("Lo siento, pero no debe estar vacío.");
         
     } else if (texto.match(caracteres) != texto.match(caracteres)){
-        alert("El texto no puede contener Mayusculas ni acentos por favor ni caracteres especiales.");
+        alert("El texto no puede contener Mayusculas, acentos ni caracteres especiales.por favor modifiquelo");
     } else{
         
         var textoCifrado = texto.replace(/e/gi, "enter").replace(/i/gi, "imes").replace(/a/gi, "ai").replace(/o/gi, "ober").replace(/u/gi, "ufat");
         document.querySelector(".text-input-salida").value = textoCifrado;
-        document.querySelector(".text-input-salida").value;
+        document.querySelector("#input-texto").value;
                        
-        document.getElementById(".text-input-salida").style.visibility = "visible";
+        document.getElementById("msg").style.visibility = "visible";
         document.getElementById("btn-copy").style.visibility = "visible";
-        
         quitarImagen();
     }
 }
